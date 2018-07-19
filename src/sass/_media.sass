@@ -1,0 +1,105 @@
+@media (max-width: 1000px) 
+	.main, .aside 
+		margin: 30px 0 0 0	
+
+	.wrapper_main 
+		justify-content: space-evenly
+
+@media (max-width: 925px) 
+	.main 
+		width: calc(100% - 10px)
+	
+	.aside 
+		display: none
+
+@media (max-width: 733px) 
+	.main, .long-news, .header-title-description:nth-child(3), .long-news__wrapper 
+		margin: 5px 0 0 0
+
+	.news 
+		grid-template-columns: 1fr 1fr
+		grid-gap: 5px
+		margin-top: 0
+
+	.news__item:nth-child(-n+4) .news__img 
+		background-size: cover
+
+	.news__img 
+		width: calc(100% - 10px)
+		margin-top: 5px
+		height: 150px
+
+	.main-news__text 
+		opacity: 0.9
+
+	.news__title 
+		width: calc(100% - 10px)
+		margin-top: 5px
+
+	.news__text 
+		width: calc(100% - 10px)
+		margin: 5px 0 22px 0
+
+	.header-title-description__description 
+		padding-left: 20px
+		line-height: 17px
+
+	.long-news__text-wrapper 
+		margin-left: 5px
+
+	.long-news__footer 
+		margin-top: 5px
+
+	.long-news__footer 
+		display: flex
+		flex-direction: column
+
+	.long-news__speech 
+		text-align: left
+		margin-left: 0
+
+	.long-news__tags, .long-news__share 
+		margin: 3px 0 0 0
+
+@media (max-width: 600px) 
+	.header-title-description__description 
+		font-size: 0
+
+	.long-news__img_1, .long-news__img_2 
+		background-size: 100%
+
+	.long-news__img 
+		width: 100px
+
+	.hotest 
+		display: none
+
+	.menu-small, .menu 
+		display: none
+
+	.toggle 
+		display: block
+		position: absolute
+		top: 15px
+		right: 15px
+
+	.toggle__item 
+		width: 25px
+		height: 3px
+		background: #fff
+		display: block
+		margin-bottom: 5px
+		border-radius: 1px
+
+@media (max-width: 500px) 
+	.header-title-description__title 
+		padding: 10px 20px 9px 12px
+		font-size: 12px
+
+	.main-news__text 
+		font-size: 11px
+		line-height: 1.5em
+		padding: 25px 5px
+		width: calc(100% - 10px)
+		bottom: 5px
+		left: 5px
